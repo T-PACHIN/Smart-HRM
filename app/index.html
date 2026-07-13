@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b2038">
+<title>Smart HRM｜員工行動平台</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="svg-sprite" aria-hidden="true">
+  <symbol id="i-logo" viewBox="0 0 24 24"><path d="M12 2 3.5 7v10L12 22l8.5-5V7L12 2Z"/><path d="m8.2 9.2 3.8-2.1 3.8 2.1v5.5L12 16.9l-3.8-2.2V9.2Z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-6h6v6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6V2Z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/><path d="M10 21h4"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-location" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 8a14 14 0 0 1 18 0M6 12a9 9 0 0 1 12 0M9 16a4 4 0 0 1 6 0"/><circle cx="12" cy="20" r="1"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M8 10h.01M16 10h.01M9 15a4 4 0 0 0 6 0"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-leave" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h8"/></symbol>
+  <symbol id="i-overtime" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h5M19 3v4h-4"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13 7 4 4"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 5h14a2 2 0 0 1 2 2v12H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/><path d="M16 11h6v5h-6a2.5 2.5 0 0 1 0-5Z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H4V4ZM20 4h-6a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h6V4Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21h-4v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H3v-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3V3h4v.1A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9A1.7 1.7 0 0 0 21 10h.1v4H21a1.7 1.7 0 0 0-1.6 1Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M9 12h9"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<section id="loginView" class="login-view">
+  <div class="login-shell">
+    <div class="brand-panel">
+      <div class="brand-mark"><svg><use href="#i-logo"/></svg></div>
+      <div><div class="brand-title">Smart HRM</div><div class="brand-subtitle">智慧人力資源管理平台</div></div>
+    </div>
+    <div class="login-card">
+      <div class="eyebrow">EMPLOYEE PORTAL</div>
+      <h1>歡迎回來</h1>
+      <p>登入您的企業員工帳號，開始今日工作。</p>
+      <label class="form-field"><span>企業帳號</span><div class="input-wrap"><svg><use href="#i-user"/></svg><input id="account" value="demo@smarthrm.com"></div></label>
+      <label class="form-field"><span>密碼</span><div class="input-wrap"><svg><use href="#i-shield"/></svg><input type="password" value="12345678"></div></label>
+      <div class="login-options"><label><input type="checkbox" checked> 記住我</label><button type="button" class="text-btn">忘記密碼？</button></div>
+      <button id="loginBtn" class="primary-btn">安全登入</button>
+      <button class="sso-btn"><svg><use href="#i-shield"/></svg> 使用企業 SSO 登入</button>
+      <div class="login-footer">Protected by enterprise identity verification</div>
+    </div>
+  </div>
+</section>
+
+<section id="appView" class="app-view hidden">
+  <header class="app-header">
+    <div class="header-left">
+      <button class="icon-btn" id="menuBtn" aria-label="選單"><svg><use href="#i-menu"/></svg></button>
+      <div><div class="header-kicker" id="greeting">早安，林小明</div><div class="header-company">元祿科技有限公司</div></div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="切換主題"><svg><use href="#i-moon"/></svg></button>
+      <button class="icon-btn has-dot" data-page="notifications" aria-label="通知"><svg><use href="#i-bell"/></svg></button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="page active" id="page-home">
+      <div class="employee-card">
+        <div class="employee-row"><div class="avatar">LM</div><div><div class="employee-name">林小明</div><div class="employee-meta">專案工程師 · RD001</div></div><span class="status-pill success">上班中</span></div>
+        <div class="status-grid">
+          <div><span>上班打卡</span><strong id="homeClockIn">08:55</strong></div><div><span>今日工時</span><strong id="workHours">02:35</strong></div><div><span>下班打卡</span><strong id="homeClockOut">--:--</strong></div><div><span>預計工時</span><strong>08:00</strong></div>
+        </div>
+        <button class="card-cta" data-page="clock"><svg><use href="#i-clock"/></svg> 前往打卡</button>
+      </div>
+
+      <div class="section-heading"><div><span>常用服務</span><small>Daily services</small></div><button class="text-btn">編輯</button></div>
+      <div class="service-grid">
+        <button class="service-card" data-page="leave"><span class="service-icon blue"><svg><use href="#i-leave"/></svg></span><strong>請假申請</strong><small>Leave request</small></button>
+        <button class="service-card" data-page="overtime"><span class="service-icon indigo"><svg><use href="#i-overtime"/></svg></span><strong>加班申請</strong><small>Overtime</small></button>
+        <button class="service-card" data-page="makeup"><span class="service-icon teal"><svg><use href="#i-edit"/></svg></span><strong>補卡申請</strong><small>Clock correction</small></button>
+        <button class="service-card" data-page="outing"><span class="service-icon amber"><svg><use href="#i-briefcase"/></svg></span><strong>外出申請</strong><small>Business outing</small></button>
+      </div>
+
+      <div class="section-heading"><div><span>今日班表</span><small>Thursday · 7月13日</small></div><button class="text-btn" data-page="schedule">查看全部</button></div>
+      <div class="surface schedule-mini"><div class="schedule-date"><strong>13</strong><span>JUL</span></div><div class="schedule-info"><strong>正常班 A</strong><span>09:00 – 18:00</span><small><svg><use href="#i-location"/></svg> 台中總部 · 研發中心</small></div><span class="status-pill neutral">進行中</span></div>
+
+      <div class="section-heading"><div><span>最新通知</span><small>Recent updates</small></div><button class="text-btn" data-page="notifications">查看全部</button></div>
+      <div class="surface notification-list compact-list">
+        <button class="list-row"><span class="row-icon success-bg"><svg><use href="#i-check"/></svg></span><span class="row-copy"><strong>加班申請已核准</strong><small>7月14日 18:00–20:00</small></span><span class="row-time">10:28</span></button>
+        <button class="list-row"><span class="row-icon blue-bg"><svg><use href="#i-wallet"/></svg></span><span class="row-copy"><strong>本月薪資單已發布</strong><small>可至「我的薪資」查看</small></span><span class="row-time">昨天</span></button>
+      </div>
+    </section>
+
+    <section class="page" id="page-clock">
+      <div class="page-title"><div><span>出勤打卡</span><small>Attendance check-in</small></div></div>
+      <div class="surface clock-panel">
+        <div class="live-time" id="liveTime">09:15:28</div><div class="live-date" id="liveDate">2026年7月13日 星期一</div>
+        <div class="location-card"><div><svg><use href="#i-location"/></svg><span><small>目前位置</small><strong>台中市西屯區 · 元祿科技</strong></span></div><button class="text-btn">重新定位</button></div>
+        <div class="verify-list">
+          <div><span class="verify-icon"><svg><use href="#i-location"/></svg></span><span>GPS 定位</span><b>正常 <svg><use href="#i-check"/></svg></b></div>
+          <div><span class="verify-icon"><svg><use href="#i-wifi"/></svg></span><span>Wi-Fi 驗證</span><b>公司內部網路 <svg><use href="#i-check"/></svg></b></div>
+          <div><span class="verify-icon"><svg><use href="#i-device"/></svg></span><span>裝置驗證</span><b>iPhone 15 Pro <svg><use href="#i-check"/></svg></b></div>
+          <div><span class="verify-icon"><svg><use href="#i-face"/></svg></span><span>Face ID 驗證</span><b>已通過 <svg><use href="#i-check"/></svg></b></div>
+        </div>
+        <div class="clock-actions"><button id="clockInBtn" class="primary-btn">上班打卡</button><button id="clockOutBtn" class="secondary-btn">下班打卡</button></div>
+      </div>
+      <div class="section-heading"><div><span>今日紀錄</span><small>Today timeline</small></div></div>
+      <div class="surface timeline" id="timeline"><div class="timeline-item"><span></span><div><strong>上班打卡成功</strong><small>08:55 · GPS + Face ID</small></div><b>正常</b></div></div>
+    </section>
+
+    <section class="page" id="page-attendance">
+      <div class="page-title"><div><span>出勤紀錄</span><small>Attendance overview</small></div><button class="outline-btn">2026年7月</button></div>
+      <div class="summary-grid"><div class="summary-card"><span>出勤天數</span><strong>20</strong><small>天</small></div><div class="summary-card"><span>總工時</span><strong>160:30</strong><small>小時</small></div><div class="summary-card"><span>加班時數</span><strong>15:30</strong><small>小時</small></div></div>
+      <div class="surface attendance-list">
+        <div class="attendance-day"><div class="day-head"><strong>07/13（四）</strong><span class="status-pill success">正常</span></div><div class="day-detail"><span>上班<strong>08:55</strong></span><span>下班<strong>--:--</strong></span><span>工時<strong>02:35</strong></span></div></div>
+        <div class="attendance-day"><div class="day-head"><strong>07/12（三）</strong><span class="status-pill success">正常</span></div><div class="day-detail"><span>上班<strong>08:50</strong></span><span>下班<strong>18:10</strong></span><span>工時<strong>09:20</strong></span></div></div>
+        <div class="attendance-day"><div class="day-head"><strong>07/11（二）</strong><span class="status-pill warning">遲到</span></div><div class="day-detail"><span>上班<strong>09:12</strong></span><span>下班<strong>18:03</strong></span><span>工時<strong>08:51</strong></span></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-schedule">
+      <div class="page-title"><div><span>我的班表</span><small>Work schedule</small></div><button class="outline-btn">本週</button></div>
+      <div class="surface calendar-card"><div class="calendar-head"><button>‹</button><strong>2026年7月</strong><button>›</button></div><div class="calendar-grid"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><i></i><i></i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i><i>11</i><i>12</i><i class="today">13</i><i>14</i><i>15</i><i>16</i><i>17</i><i>18</i><i>19</i><i>20</i><i>21</i><i>22</i><i>23</i><i>24</i><i>25</i><i>26</i><i>27</i><i>28</i><i>29</i><i>30</i><i>31</i></div></div>
+      <div class="section-heading"><div><span>本週班表</span><small>7/10 – 7/16</small></div></div>
+      <div class="surface schedule-list"><div class="schedule-row active"><span><b>13</b><small>四</small></span><div><strong>正常班 A</strong><small>09:00 – 18:00 · 台中總部</small></div><em>今日</em></div><div class="schedule-row"><span><b>14</b><small>五</small></span><div><strong>正常班 A</strong><small>09:00 – 18:00 · 台中總部</small></div></div><div class="schedule-row off"><span><b>15</b><small>六</small></span><div><strong>休假</strong><small>例假日</small></div></div></div>
+      <button class="outline-wide">提出換班申請</button>
+    </section>
+
+    <section class="page" id="page-applications">
+      <div class="page-title"><div><span>申請中心</span><small>Employee requests</small></div></div>
+      <div class="application-grid">
+        <button data-page="leave"><span class="service-icon blue"><svg><use href="#i-leave"/></svg></span><strong>請假申請</strong><small>特休、病假、事假</small><svg class="chev"><use href="#i-chevron"/></svg></button>
+        <button data-page="makeup"><span class="service-icon teal"><svg><use href="#i-edit"/></svg></span><strong>補卡申請</strong><small>忘記打卡、異常補登</small><svg class="chev"><use href="#i-chevron"/></svg></button>
+        <button data-page="overtime"><span class="service-icon indigo"><svg><use href="#i-overtime"/></svg></span><strong>加班申請</strong><small>平日、休息日加班</small><svg class="chev"><use href="#i-chevron"/></svg></button>
+        <button data-page="outing"><span class="service-icon amber"><svg><use href="#i-briefcase"/></svg></span><strong>外出申請</strong><small>公出、外勤、客戶拜訪</small><svg class="chev"><use href="#i-chevron"/></svg></button>
+      </div>
+      <div class="section-heading"><div><span>申請紀錄</span><small>Recent requests</small></div><button class="text-btn">查看全部</button></div>
+      <div class="segmented"><button class="active">全部</button><button>待審核</button><button>已核准</button><button>已駁回</button></div>
+      <div class="surface request-list"><div class="request-row"><span class="row-icon blue-bg"><svg><use href="#i-leave"/></svg></span><div><strong>特休申請</strong><small>07/18 全天 · 家庭安排</small></div><span class="status-pill success">已核准</span></div><div class="request-row"><span class="row-icon teal-bg"><svg><use href="#i-edit"/></svg></span><div><strong>補卡申請</strong><small>07/11 09:00 · 忘記打卡</small></div><span class="status-pill warning">待審核</span></div></div>
+    </section>
+
+    <section class="page form-page" id="page-leave"><div class="page-title"><div><span>請假申請</span><small>Leave request</small></div></div><form class="surface form-card request-form"><label><span>假別</span><select><option>特休</option><option>病假</option><option>事假</option><option>補休</option></select></label><div class="form-two"><label><span>開始日期</span><input type="date" value="2026-07-18"></label><label><span>結束日期</span><input type="date" value="2026-07-18"></label></div><label><span>請假時數</span><select><option>全天（8 小時）</option><option>上午（4 小時）</option><option>下午（4 小時）</option></select></label><label><span>請假原因</span><textarea placeholder="請輸入請假原因">家庭安排</textarea></label><label class="upload-box"><svg><use href="#i-upload"/></svg><strong>上傳附件</strong><small>支援 JPG、PNG、PDF，最大 10MB</small><input type="file"></label><button class="primary-btn submit-request" type="button">送出申請</button></form></section>
+    <section class="page form-page" id="page-makeup"><div class="page-title"><div><span>補卡申請</span><small>Clock correction</small></div></div><form class="surface form-card request-form"><label><span>補卡日期</span><input type="date" value="2026-07-11"></label><div class="form-two"><label><span>補卡類型</span><select><option>上班卡</option><option>下班卡</option></select></label><label><span>補卡時間</span><input type="time" value="09:00"></label></div><label><span>補卡原因</span><textarea>忘記打卡</textarea></label><label class="upload-box"><svg><use href="#i-upload"/></svg><strong>上傳證明</strong><small>支援 JPG、PNG、PDF</small><input type="file"></label><button class="primary-btn submit-request" type="button">送出申請</button></form></section>
+    <section class="page form-page" id="page-overtime"><div class="page-title"><div><span>加班申請</span><small>Overtime request</small></div></div><form class="surface form-card request-form"><label><span>加班日期</span><input type="date" value="2026-07-14"></label><div class="form-two"><label><span>開始時間</span><input type="time" value="18:00"></label><label><span>結束時間</span><input type="time" value="20:00"></label></div><label><span>加班類型</span><select><option>平日加班</option><option>休息日加班</option><option>國定假日加班</option></select></label><label><span>加班事由</span><textarea>專案上線前測試</textarea></label><button class="primary-btn submit-request" type="button">送出申請</button></form></section>
+    <section class="page form-page" id="page-outing"><div class="page-title"><div><span>外出申請</span><small>Business outing</small></div></div><form class="surface form-card request-form"><label><span>外出日期</span><input type="date" value="2026-07-17"></label><div class="form-two"><label><span>開始時間</span><input type="time" value="13:00"></label><label><span>結束時間</span><input type="time" value="17:00"></label></div><label><span>外出地點</span><input value="台中軟體園區"></label><label><span>外出事由</span><textarea>客戶需求訪談</textarea></label><button class="primary-btn submit-request" type="button">送出申請</button></form></section>
+
+    <section class="page" id="page-notifications"><div class="page-title"><div><span>通知中心</span><small>Notifications</small></div><button class="text-btn">全部已讀</button></div><div class="segmented"><button class="active">全部</button><button>未讀</button><button>系統</button><button>申請</button></div><div class="surface notification-list"><button class="list-row unread"><span class="row-icon amber-bg"><svg><use href="#i-bell"/></svg></span><span class="row-copy"><strong>補卡申請已核准</strong><small>主管已核准您 07/11 的補卡申請</small></span><span class="row-time">2 分鐘</span></button><button class="list-row unread"><span class="row-icon indigo-bg"><svg><use href="#i-overtime"/></svg></span><span class="row-copy"><strong>加班申請待主管審核</strong><small>07/14 18:00–20:00</small></span><span class="row-time">30 分鐘</span></button><button class="list-row"><span class="row-icon success-bg"><svg><use href="#i-clock"/></svg></span><span class="row-copy"><strong>上班打卡成功</strong><small>今天 08:55 · GPS 驗證通過</small></span><span class="row-time">08:55</span></button></div></section>
+
+    <section class="page" id="page-salary"><div class="page-title"><div><span>我的薪資</span><small>Payroll statement</small></div><button class="outline-btn">2026年6月</button></div><div class="salary-hero"><span>本月實發薪資（TWD）</span><strong>58,600</strong><small>已於 2026/07/05 匯款</small></div><div class="surface salary-detail"><div><span>本薪</span><strong>45,000</strong></div><div><span>職務津貼</span><strong>5,000</strong></div><div><span>交通津貼</span><strong>2,000</strong></div><div><span>績效獎金</span><strong>8,000</strong></div><div class="deduct"><span>扣款項目</span><strong>-1,400</strong></div><div class="total"><span>實發薪資</span><strong>58,600</strong></div></div><button class="outline-wide"><svg><use href="#i-file"/></svg> 下載薪資單 PDF</button></section>
+
+    <section class="page" id="page-training"><div class="page-title"><div><span>教育訓練</span><small>Learning center</small></div></div><div class="surface training-card"><span class="row-icon blue-bg"><svg><use href="#i-book"/></svg></span><div><strong>資訊安全年度訓練</strong><small>完成期限：2026/07/31</small><div class="progress"><i style="width:65%"></i></div></div><b>65%</b></div><div class="surface training-card"><span class="row-icon teal-bg"><svg><use href="#i-shield"/></svg></span><div><strong>個資保護與法遵</strong><small>完成期限：2026/08/15</small><div class="progress"><i style="width:20%"></i></div></div><b>20%</b></div></section>
+
+    <section class="page" id="page-profile"><div class="profile-hero"><div class="avatar large">LM</div><div><strong>林小明</strong><span>專案工程師 · RD001</span><small>研發部 / 台中總部</small></div></div><div class="surface profile-list"><button><span class="row-icon blue-bg"><svg><use href="#i-user"/></svg></span><span>個人資料</span><svg><use href="#i-chevron"/></svg></button><button data-page="salary"><span class="row-icon teal-bg"><svg><use href="#i-wallet"/></svg></span><span>我的薪資</span><svg><use href="#i-chevron"/></svg></button><button data-page="training"><span class="row-icon indigo-bg"><svg><use href="#i-book"/></svg></span><span>教育訓練</span><svg><use href="#i-chevron"/></svg></button><button><span class="row-icon amber-bg"><svg><use href="#i-shield"/></svg></span><span>技能與證照</span><svg><use href="#i-chevron"/></svg></button><button><span class="row-icon neutral-bg"><svg><use href="#i-settings"/></svg></span><span>設定</span><svg><use href="#i-chevron"/></svg></button></div><button id="logoutBtn" class="logout-btn"><svg><use href="#i-logout"/></svg> 登出帳號</button></section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="active" data-page="home"><svg><use href="#i-home"/></svg><span>首頁</span></button>
+    <button data-page="attendance"><svg><use href="#i-clock"/></svg><span>出勤</span></button>
+    <button data-page="schedule"><svg><use href="#i-calendar"/></svg><span>班表</span></button>
+    <button data-page="applications"><svg><use href="#i-file"/></svg><span>申請</span></button>
+    <button data-page="profile"><svg><use href="#i-user"/></svg><span>我的</span></button>
+  </nav>
+</section>
+
+<div id="toast" class="toast">操作成功</div>
+<script src="app.js"></script>
+</body>
+</html>
