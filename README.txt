@@ -1,27 +1,17 @@
-BOMB HR 官網相容還原包
+BOMB HR 平台介面後方頁面補齊包
 
-請只覆蓋 GitHub 最外層的：
-- index.html
-- style.css
+請解壓縮後，把裡面的全部內容拖到 GitHub 專案最外層：
 
-其他全部不要刪、不要改：
-- app.js
-- products.html
-- dashboard.html
-- solutions.html
-- pricing.html
-- case-studies.html
-- resources.html
-- about.html
-- contact.html
-- login.html
-- app/
-- admin/
-- assets/
+solutions.html
+pricing.html
+case-studies.html
+resources.html
+about.html
+contact.html
+login.html
+app/
+admin/
 
-上傳方式：
-1. 解壓縮本檔案
-2. 將 index.html 與 style.css 拖到 GitHub 最外層
-3. 選擇覆蓋同名檔案
-4. Commit changes
-5. 等待 GitHub Pages 部署後按 Ctrl + F5
+同名檔案直接覆蓋，最後按 Commit changes。
+
+不要刪除 index.html、style.css、dashboard.html 或 assets/。
