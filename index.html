@@ -8,6 +8,7 @@
   <title>BOMB HR｜企業智慧人力資源管理平台</title>
   <link rel="icon" href="assets/bombhr-logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home-v5.css" />
 </head>
 <body>
   <div class="space-bg" aria-hidden="true">
@@ -22,7 +23,7 @@
         <img src="assets/bombhr-logo.png" alt="BOMB HR 人資管理系統" />
       </a>
 
-      <nav class="nav-links" id="navLinks" aria-label="主要導覽"><a class="active" href="index.html">首頁</a><a href="products.html">產品功能</a><a href="dashboard.html">平台介面</a><a href="app/">員工 APP</a><a href="solutions.html">解決方案</a><a href="pricing.html">方案價格</a><a href="case-studies.html">成功案例</a><a href="resources.html">資源中心</a><a href="about.html">關於我們</a><a href="contact.html">聯絡我們</a></nav>
+      <nav class="nav-links" id="navLinks" aria-label="主要導覽"><a class="active" href="index.html">首頁</a><a href="products.html">產品功能</a><a href="dashboard.html">平台介面</a><a href="solutions.html">解決方案</a><a href="pricing.html">方案價格</a><a href="case-studies.html">成功案例</a><a href="resources.html">資源中心</a><a href="about.html">關於我們</a><a href="contact.html">聯絡我們</a></nav>
 
       <div class="nav-actions">
         <a href="login.html" class="btn btn-login">企業登入</a><a href="contact.html" class="btn btn-demo">預約 Demo</a>
@@ -46,7 +47,7 @@
 
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary"><span>▣</span>立即預約 Demo</a>
-            <a class="btn btn-outline" href="app/"><span>▷</span>查看員工 APP</a>
+            <button class="btn btn-outline" data-modal-open="videoModal"><span>▷</span>觀看產品介紹</button>
           </div>
 
           <div class="kpi-row">
@@ -156,30 +157,26 @@
       </div>
     </section>
 
-    <section class="eapp-section" id="employeeApp">
+
+    <section class="v5-app-showcase" id="employee-app">
       <div class="container">
-        <div class="eapp-head reveal">
-          <div>
+        <div class="v5-app-head reveal">
+          <div class="v5-app-copy">
             <span class="section-kicker">EMPLOYEE APP DEMO</span>
             <h2>智慧人力資源，<span>由你掌握</span></h2>
-            <p>BOMB HR 員工 APP 整合打卡、排班、請假、加班、薪資、福利、公告與教育訓練，讓員工日常流程集中在同一個行動入口。</p>
+            <p>BOMB HR 員工 APP 整合智慧打卡、排班月曆、請假與加班申請、薪資、福利、公告、教育訓練及帳號安全，讓員工日常操作與企業流程完整串接。</p>
           </div>
-          <div class="eapp-actions">
-            <a class="btn btn-primary" href="app/">體驗完整 Demo</a>
-            <a class="btn btn-outline" href="assets/employee-app-showcase.png" target="_blank" rel="noopener">查看完整展示圖</a>
+          <div class="v5-app-actions">
+            <a href="app/" class="btn btn-primary">體驗員工 APP Demo</a>
+            <a href="assets/employee-app-showcase.png" target="_blank" class="btn btn-outline">查看完整展示圖</a>
           </div>
         </div>
-
-        <a class="eapp-showcase reveal" href="app/" aria-label="開啟 BOMB HR 員工 APP Demo">
-          <img src="assets/employee-app-showcase.png" alt="BOMB HR 深色員工 APP 完整功能展示">
-          <span>點擊進入 Employee APP Demo</span>
-        </a>
-
-        <div class="eapp-features">
-          <article class="reveal"><i>✓</i><h3>智慧打卡</h3><p>WiFi、NFC、QR Code、GPS、補卡與完整出勤紀錄。</p></article>
-          <article class="reveal"><i>▦</i><h3>智慧排班</h3><p>完整月曆班表、每日班別、福利與員工服務。</p></article>
-          <article class="reveal"><i>▤</i><h3>智慧申請</h3><p>請假、加班、附件上傳、成功結果與申請進度。</p></article>
-          <article class="reveal"><i>$</i><h3>智慧服務</h3><p>薪資、福利、公告及教育訓練一站整合。</p></article>
+        <div class="v5-app-image reveal"><img src="assets/employee-app-showcase.png" alt="BOMB HR Employee APP 完整功能展示"></div>
+        <div class="v5-app-grid">
+          <article class="v5-app-card reveal"><i>✓</i><h3>智慧打卡</h3><p>GPS、WiFi、NFC、QR Code、裝置綁定與補卡紀錄。</p></article>
+          <article class="v5-app-card reveal"><i>▦</i><h3>智慧排班</h3><p>完整月曆、每日班別、工作時間與休息資訊。</p></article>
+          <article class="v5-app-card reveal"><i>▤</i><h3>智慧申請</h3><p>請假、加班、附件上傳、申請結果與簽核進度。</p></article>
+          <article class="v5-app-card reveal"><i>$</i><h3>智慧服務</h3><p>薪資、福利、公告與教育訓練集中管理。</p></article>
         </div>
       </div>
     </section>
@@ -286,7 +283,7 @@
         <img src="assets/bombhr-logo.png" alt="BOMB HR" />
         <p>The Intelligent Hub for Enterprise Workforce Management.</p>
       </div>
-      <div><h4>產品</h4><a href="products.html">功能模組</a><a href="dashboard.html">平台介面</a><a href="app/">員工 APP</a><a href="solutions.html">解決方案</a><a href="pricing.html">方案價格</a>
+      <div><h4>產品</h4><a href="products.html">功能模組</a><a href="solutions.html">解決方案</a><a href="pricing.html">方案價格</a>
         <a href="case-studies.html">成功案例</a></div>
       <div><h4>企業</h4><a href="#about">關於我們</a><a href="#contact">預約 Demo</a><a href="#contact">聯絡我們</a></div>
       <div><h4>法務</h4><a href="#">隱私權政策</a><a href="#">服務條款</a><a href="#">資訊安全</a></div>

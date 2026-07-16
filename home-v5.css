@@ -1,0 +1,11 @@
+
+/* V5 Employee APP showcase — loaded only by index.html */
+.v5-app-showcase{position:relative;padding:105px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:radial-gradient(circle at 12% 18%,rgba(36,216,255,.09),transparent 28%),radial-gradient(circle at 88% 18%,rgba(136,60,255,.15),transparent 31%),linear-gradient(180deg,rgba(6,16,32,.72),rgba(5,13,27,.95))}
+html[data-theme="light"] .v5-app-showcase{background:linear-gradient(180deg,#f8fbff,#edf3fb)}
+.v5-app-head{display:flex;align-items:flex-end;justify-content:space-between;gap:38px;margin-bottom:34px}
+.v5-app-copy{max-width:760px}.v5-app-copy h2{margin:8px 0 15px;font-size:clamp(38px,4.5vw,62px);line-height:1.08;letter-spacing:-.045em}.v5-app-copy h2 span{background:linear-gradient(90deg,#22ddd0,#5aafff,#9a4aff);-webkit-background-clip:text;color:transparent}.v5-app-copy p{margin:0;color:var(--muted);font-size:18px}
+.v5-app-actions{display:flex;gap:12px;flex-wrap:wrap;flex:0 0 auto}
+.v5-app-image{position:relative;border:1px solid rgba(115,151,220,.22);border-radius:28px;overflow:hidden;background:#020817;box-shadow:0 40px 110px rgba(0,0,0,.48)}.v5-app-image img{width:100%;display:block}.v5-app-image:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 80px rgba(51,108,255,.08)}
+.v5-app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:20px}.v5-app-card{min-height:145px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(17,38,68,.86),rgba(8,23,45,.92))}html[data-theme="light"] .v5-app-card{background:#fff}.v5-app-card i{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;color:#fff;font-style:normal;background:linear-gradient(135deg,#287fff,#8c43f5)}.v5-app-card h3{margin:13px 0 5px;font-size:17px}.v5-app-card p{margin:0;color:var(--muted);font-size:12px}
+@media(max-width:900px){.v5-app-head{display:block}.v5-app-actions{margin-top:22px}.v5-app-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.v5-app-showcase{padding:75px 0}.v5-app-actions{display:grid}.v5-app-actions .btn{width:100%}.v5-app-grid{grid-template-columns:1fr}.v5-app-image{border-radius:18px}}
