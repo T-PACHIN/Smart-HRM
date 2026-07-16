@@ -282,3 +282,14 @@ html[data-theme="light"] .contact-box{background:white}.contact-box form{display
   .login-shell{border-radius:24px}.login-option{grid-template-columns:50px 1fr 22px;padding:17px}
   .login-option-icon{width:50px;height:50px}
 }
+
+
+/* Employee APP showcase — isolated homepage styles */
+.eapp-section{padding:110px 0;background:linear-gradient(180deg,rgba(7,18,36,.5),rgba(3,11,23,.94));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+html[data-theme="light"] .eapp-section{background:linear-gradient(180deg,#eef4fc,#f8fbff)}
+.eapp-head{display:flex;align-items:flex-end;justify-content:space-between;gap:44px;margin-bottom:34px}
+.eapp-head>div:first-child{max-width:800px}.eapp-head h2{font-size:clamp(38px,4vw,58px);line-height:1.12;letter-spacing:-.04em;margin:8px 0 14px}.eapp-head h2 span{background:linear-gradient(90deg,#28ddec,#548aff,#9b4cff);-webkit-background-clip:text;color:transparent}.eapp-head p{font-size:18px;color:var(--muted);margin:0}.eapp-actions{display:flex;gap:12px;flex:0 0 auto}
+.eapp-showcase{position:relative;display:block;overflow:hidden;border:1px solid rgba(105,145,220,.25);border-radius:28px;background:#020817;box-shadow:0 35px 100px rgba(0,0,0,.48);transition:.3s}.eapp-showcase:hover{transform:translateY(-5px);border-color:rgba(71,150,255,.52)}.eapp-showcase img{width:100%;display:block}.eapp-showcase>span{position:absolute;right:22px;bottom:20px;padding:10px 15px;border-radius:999px;background:rgba(6,16,32,.82);border:1px solid rgba(126,157,211,.28);backdrop-filter:blur(14px);color:#fff;font-size:12px;font-weight:900}
+.eapp-features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}.eapp-features article{padding:21px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(17,38,68,.86),rgba(7,22,43,.9))}html[data-theme="light"] .eapp-features article{background:#fff}.eapp-features i{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#2f7dff,#8d43ff);color:#fff;font-style:normal;font-size:20px}.eapp-features h3{font-size:18px;margin:14px 0 6px}.eapp-features p{color:var(--muted);font-size:12px;margin:0}
+@media(max-width:980px){.eapp-head{display:block}.eapp-actions{margin-top:20px}.eapp-features{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.eapp-section{padding:75px 0}.eapp-head p{font-size:15px}.eapp-actions{display:grid}.eapp-features{grid-template-columns:1fr}.eapp-showcase{border-radius:18px}.eapp-showcase>span{display:none}}

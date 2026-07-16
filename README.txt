@@ -1,16 +1,11 @@
-BOMB HR Official Website V4 Update
+BOMB HR 官網相容還原包
 
-這不是整個 GitHub 專案，而是「首頁更新包」。
-
-請覆蓋 GitHub 最外層：
+請只覆蓋 GitHub 最外層的：
 - index.html
 - style.css
+
+其他全部不要刪、不要改：
 - app.js
-
-請新增到 assets 資料夾：
-- employee-app-showcase.png
-
-原本以下內容全部保留，不要刪除：
 - products.html
 - dashboard.html
 - solutions.html
@@ -22,16 +17,11 @@ BOMB HR Official Website V4 Update
 - login.html
 - app/
 - admin/
-- assets/ 內其他圖片
+- assets/
 
-更新後結構：
-BOMB-HR/
-├── index.html
-├── style.css
-├── app.js
-├── assets/
-│   ├── bombhr-logo.png
-│   └── employee-app-showcase.png
-├── app/
-├── admin/
-└── 其他原有頁面
+上傳方式：
+1. 解壓縮本檔案
+2. 將 index.html 與 style.css 拖到 GitHub 最外層
+3. 選擇覆蓋同名檔案
+4. Commit changes
+5. 等待 GitHub Pages 部署後按 Ctrl + F5
