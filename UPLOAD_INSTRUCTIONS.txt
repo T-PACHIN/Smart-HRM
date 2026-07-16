@@ -1,0 +1,13 @@
+BOMB HR V6 無快取完整覆蓋版
+
+這版不再使用舊的 style.css / app.js。
+所有頁面都改載入：
+- site-v6.css?v=20260716
+- site-v6.js?v=20260716
+
+請解壓縮後，把裡面的全部內容拖到 GitHub 專案最外層並 Commit。
+
+重要：
+1. 可以保留舊 style.css 和 app.js，但網站已不再使用它們。
+2. 新增的 site-v6.css 與 site-v6.js 必須一起上傳。
+3. 上傳完成後等待 GitHub Pages 部署，再按 Ctrl + F5。
